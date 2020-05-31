@@ -1,5 +1,7 @@
-kernel := device/samsung/dreamlte/include/kernel
-dt := device/samsung/dreamlte/include/dt.img
+# Include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/dreamlte/prebuilt
+kernel := device/samsung/dreamlte/prebuilt/kernel
+dt := device/samsung/dreamlte/prebuilt/dt.img
 
 # Platform
 BOARD_VENDOR := samsung
@@ -57,9 +59,6 @@ TW_USE_NEW_MINADBD := true
 TW_EXCLUDE_TWRPAPP := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_DEVICE_VERSION := 2
-
-# Include
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/dreamlte/include
 
 # SHRP flags
 LZMA_RAMDISK_TARGETS := recovery
